@@ -233,7 +233,7 @@ input[type="checkbox"].css-checkbox + label.css-label {
     height:30px;
     display:inline-block;
     line-height:15px;
-    font-size:15px;
+    font-size:16px;
     vertical-align:middle;
     cursor:pointer;
     background: url("images/checkbox-unchecked.png") 0 0 no-repeat;
@@ -300,8 +300,16 @@ input[type="radio"].css-checkbox.checked + label.css-label {
 input[type="radio"].css-checkbox:checked + label.css-label {
     background: url("images/radio-cheked.png") 0 -3px no-repeat;
 }
-
-
+.CAMainform input.input-text, .CAMainform input, .CAMainform .sbHolder, .CAMainform textarea, .CAMainform select{
+border: none;
+width: 184px;
+border-top: 2px solid #e5e5e5;
+border-left: 2px solid #e5e5e5;
+background: #fff;
+padding: 5px 2px 5px 10px;
+font-family: "Helvetica W02 Cn";
+font-size: 17px;
+}
 #popupWrapper{
     position: fixed;
     top: 0;
@@ -344,6 +352,15 @@ display: none;
     margin-left: 10px;
 
 }
+.email-help{
+    position: absolute;
+    background: #808080;
+    display: block;
+    display: none;
+    width: 205px;
+      margin-left: 648px;
+    padding: 15px;
+}
 .ca-form .caLvl2{
     padding: 23px 50px 11px;
     text-transform: uppercase;
@@ -363,45 +380,47 @@ display: none;
     margin: 20px 65px;
 text-transform: uppercase;
 }
-.formfields{
-    padding: 20px 60px 20px 110px;
 
-
-
-}
-.formfields-lvl2 .input-box
+.formlist .input-box
 {
-    width: 250px;
-    display: block;
     float: left;
+    width: 265px;
+}
+.CAMainform .ca-form-lvl2 .input-text{
+
+    width: 430px;
 }
 .ca-form label {
     float: left;
     display: block;
     width: 160px;
     text-align: right;
-    padding: 2px 0 0;
+    padding: 7px 0 0;
     margin-right: 10px;
 
 }
-.formfields-lvl1 ul{
-    vertical-align: top;
-    display: block;
-
+.CAMainform .ca-form-lvl2 .formlist {
+      margin-left: 65px;
+    margin-bottom: 30px;
 }
-.formfields-lvl1 li{
+.formlist li{
     vertical-align: top;
     margin-top: 10px;
+    overflow: hidden;
+
 
 }
+
+
 .ca-form-lvl2 .formfields-lvl1 .input-box label.check{
     width: 400px;}
 
 .ca-form .CAMainform .if-checked{
 
-    padding-top: 25px;
+    padding-top: 15px;
     display: block;
     margin-left: 175px;
+    display: none;
 
 }
 
@@ -414,10 +433,10 @@ text-transform: uppercase;
 
 .ca-form .CAMainform .if-checked .checkbox .checkcolum.right{
 
-    margin-right: 195px;
+    margin-right: 150px;
 }
 .ca-form .CAMainform .if-checked .checkbox .checkcolum.center{
-margin-left: 10px;
+margin-left: 55px;
  float: left;
 }
 
